@@ -3,246 +3,208 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Francis Mgbecheta - Programmer, Web, Animation &amp; Automation</title>
-<meta name="description" content="Francis Mgbecheta builds websites, web apps, online tools, animated story videos and automation for schools, businesses and brands. See GainAdmission.com.ng and StudioOS, my own animation studio.">
-<style>
-:root {
-  --bg: #f7f9fb; --card: #ffffff; --text: #14202e; --muted: #5a6b7d; --line: #e2e8ef;
-  --brand: #0e9f8e; --brand-dark: #0b7f72; --navy: #101a27; --chip: #e7f6f3;
-}
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #0f1722; --card: #172231; --text: #e8eef5; --muted: #9fb0c3; --line: #263547;
-          --brand: #22c3ae; --brand-dark: #1aa794; --navy: #0a1119; --chip: #173a39; }
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--bg); color: var(--text);
-  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
-.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
-nav.top { position: sticky; top: 0; z-index: 5; background: var(--navy); border-bottom: 1px solid #1f2c3c; }
-nav.top .wrap { display: flex; gap: 6px; overflow-x: auto; white-space: nowrap; padding-top: 10px; padding-bottom: 10px; scrollbar-width: none; }
-nav.top a { color: #cfdbe8; text-decoration: none; font-size: 14px; font-weight: 600; padding: 6px 10px; border-radius: 8px; }
-nav.top a:hover { background: #1c2a3b; color: #fff; }
-header { background: var(--navy); color: #fff; padding: 48px 0 52px; }
-.tag { display: inline-block; background: #173a39; color: #7ee3d3; font-size: 13px; font-weight: 700; padding: 4px 10px; border-radius: 999px; margin-bottom: 14px; }
-header h1 { margin: 0 0 6px; font-size: clamp(30px, 6.5vw, 46px); line-height: 1.12; }
-header .role { margin: 0 0 14px; font-size: clamp(18px, 3.6vw, 22px); color: #7ee3d3; font-weight: 700; }
-header p { margin: 0; color: #c9d6e4; font-size: 17px; max-width: 680px; }
-.btns { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px; }
-.btn { display: inline-block; padding: 12px 20px; border-radius: 10px; font-weight: 700; text-decoration: none; }
-.btn-main { background: var(--brand); color: #fff; }
-.btn-main:hover { background: var(--brand-dark); }
-.btn-ghost { border: 2px solid #3c516a; color: #fff; }
-section { padding: 44px 0 6px; }
-h2 { font-size: 26px; margin: 0 0 6px; }
-.sub { color: var(--muted); margin: 0 0 20px; }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; margin-bottom: 16px; }
-.project { display: grid; gap: 18px; }
-@media (min-width: 760px) { .project.two { grid-template-columns: 1.1fr 1fr; align-items: start; } }
-.shot { width: 100%; border-radius: 10px; border: 1px solid var(--line); background: linear-gradient(135deg, #12304a, #0e9f8e); aspect-ratio: 16 / 10; object-fit: cover; display: block; }
-.shot-ph { display: flex; align-items: center; justify-content: center; color: #e8fff9; font-weight: 800; font-size: 22px; text-align: center; padding: 16px; }
-.project h3 { margin: 0 0 4px; font-size: 21px; }
-.project .link { color: var(--brand); font-weight: 700; }
-.lede { color: var(--muted); margin: 6px 0 12px; }
-.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; padding: 0; list-style: none; }
-.chips li { background: var(--chip); color: var(--text); font-size: 13px; font-weight: 600; padding: 4px 10px; border-radius: 999px; margin: 0; }
-.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 14px 0; }
-.stat { border: 1px solid var(--line); border-radius: 10px; padding: 10px; text-align: center; }
-.stat b { display: block; font-size: 22px; color: var(--brand); }
-.stat span { font-size: 13px; color: var(--muted); }
-ul.list { padding-left: 20px; margin: 0; }
-ul.list li { margin: 6px 0; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
-.grid .card { margin: 0; }
-.grid .card h3 { margin: 0 0 6px; font-size: 18px; }
-.grid .card p { margin: 0; color: var(--muted); }
-.icon { font-size: 26px; display: block; margin-bottom: 6px; }
-ol.steps { padding-left: 20px; margin: 0; }
-ol.steps li { margin: 8px 0; }
-details { border-bottom: 1px solid var(--line); padding: 12px 0; }
-details:last-child { border-bottom: 0; }
-summary { cursor: pointer; font-weight: 700; }
-details p { color: var(--muted); margin: 8px 0 0; }
-.cta { background: var(--navy); color: #fff; border-radius: 16px; padding: 28px 22px; text-align: center; }
-.cta h2 { color: #fff; }
-.cta p { color: #c9d6e4; }
-footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
-a { color: var(--brand); }
-</style>
+<title>Francis Mgbecheta | Websites, Bots &amp; Animation</title>
+<meta name="description" content="Francis Mgbecheta builds websites, web apps, WhatsApp and Telegram bots, automation and animated story videos. See my work.">
+<meta name="theme-color" content="#0b1020">
+<link rel="canonical" href="https://scottfrancis90.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Francis Mgbecheta">
+<meta property="og:url" content="https://scottfrancis90.github.io/">
+<meta property="og:title" content="Francis Mgbecheta | Websites, Bots &amp; Animation">
+<meta property="og:description" content="I build websites, bots, automation and animated videos. See my work.">
+<meta property="og:image" content="https://scottfrancis90.github.io/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Francis Mgbecheta: websites, bots and animation">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/img/icon.png">
+<link rel="apple-touch-icon" href="/img/icon.png">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Francis Mgbecheta","url":"https://scottfrancis90.github.io/","jobTitle":"Web, Bot and Automation Developer"}</script>
 </head>
 <body>
-<nav class="top" aria-label="Sections">
-  <div class="wrap">
-    <a href="#work">Work</a>
-    <a href="#services">Services</a>
-    <a href="#skills">Skills</a>
-    <a href="#process">How I work</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
 
-<header>
-  <div class="wrap">
-    <span class="tag">Available for projects</span>
-    <h1>Francis Mgbecheta</h1>
-    <p class="role">Programmer &middot; Web, Animation &amp; Automation Developer</p>
-    <p>I turn ideas into working products: websites, web apps, online calculators and tools, animated
-    story videos from my own studio, and automation that saves you time. Background in mathematics and data science, so the numbers in
-    your product are right.</p>
-    <div class="btns">
-      <a class="btn btn-main" href="#contact">Start a project</a>
-      <a class="btn btn-ghost" href="#work">See my work</a>
-    </div>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top"><span>FM</span><b>Francis Mgbecheta</b></a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#bots">Bots</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-small" href="#contact">Hire me</a>
   </div>
 </header>
 
-<main class="wrap">
-
-  <section id="work">
-    <h2>Selected work</h2>
-    <p class="sub">Real products I designed and built.</p>
-
-    <div class="card project two">
-      <div>
-        <h3>GainAdmission.com.ng</h3>
-        <a class="link" href="https://gainadmission.com.ng/" target="_blank" rel="noopener">Visit the live site &rarr;</a>
-        <p class="lede">A free platform that helps Nigerian students with JAMB and university admission.</p>
-        <div class="stats">
-          <div class="stat"><b>141</b><span>pages</span></div>
-          <div class="stat"><b>6</b><span>aggregate calculators</span></div>
-          <div class="stat"><b>219</b><span>programmes in 2 cut-off checkers</span></div>
-          <div class="stat"><b>4&times;</b><span>automatic news checks a day</span></div>
-        </div>
-      </div>
-      <div>
-        <ul class="list">
-          <li><strong>Interactive tools:</strong> students enter their scores and instantly see their aggregate and every
-          course it meets.</li>
-          <li><strong>Automation:</strong> the site checks official JAMB and university pages four times a day and
-          publishes new notices as direct quotes, with a link to the original.</li>
-          <li><strong>Search-ready:</strong> sitemap, structured data and breadcrumbs; set up in Google Search Console and Bing Webmaster.</li>
-          <li><strong>Fast and low-cost:</strong> Cloudflare hosting with automatic deployment from GitHub &mdash; no
-          server to maintain.</li>
-        </ul>
-        <ul class="chips"><li>Python</li><li>JavaScript</li><li>HTML/CSS</li><li>GitHub Actions</li><li>Cloudflare</li><li>SEO</li></ul>
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <p class="pill">Available for projects</p>
+      <h1>Websites, bots &amp; stories that <em>work for you.</em></h1>
+      <p class="lead">I'm Francis, a programmer. I build websites, bots that answer and work while you sleep,
+      and animated videos from my own studio.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Start a project</a>
+        <a class="btn btn-line" href="#work">See my work</a>
       </div>
     </div>
+    <div class="showcase">
+      <div class="browser">
+        <div class="bar"><i></i><i></i><i></i><span>gainadmission.com.ng</span></div>
+        <img src="img/gainadmission.jpg" width="1280" height="640" alt="GainAdmission website home page">
+      </div>
+      <div class="phone"><img src="img/checker.jpg" width="390" height="780" alt="GainAdmission cut-off checker on a phone"></div>
+    </div>
+  </div>
+  <div class="wrap facts">
+    <p><b>140+</b><span>pages on my live site</span></p>
+    <p><b>219</b><span>programmes in my checkers</span></p>
+    <p><b>4&times; a day</b><span>my news bot checks for updates</span></p>
+    <p><b>Script to video</b><span>in my own animation studio</span></p>
+  </div>
+</section>
 
-    <div class="card project two">
+<section class="block" id="work">
+  <div class="wrap">
+    <p class="kicker">My work</p>
+    <h2>Real projects, not templates</h2>
+
+    <article class="case">
+      <a class="case-img browser" href="https://gainadmission.com.ng/" target="_blank" rel="noopener">
+        <div class="bar"><i></i><i></i><i></i><span>gainadmission.com.ng</span></div>
+        <img src="img/gainadmission.jpg" width="1280" height="640" loading="lazy" alt="GainAdmission home page">
+      </a>
       <div>
-        <img class="shot" src="img/studioos-last-lamp.jpg" alt="Thumbnail of the animated story The Last Lamp, made with StudioOS">
-        <p style="color:var(--muted);font-size:13px;margin:8px 0 0">"The Last Lamp" &mdash; an animated story produced with StudioOS.</p>
+        <p class="label">Website &amp; tools</p>
+        <h3>GainAdmission</h3>
+        <p>A live admission platform for Nigerian students, with aggregate calculators for six universities,
+        two cut-off checkers, a subject checker and study guides.</p>
+        <ul class="chips"><li>Python</li><li>JavaScript</li><li>Cloudflare</li><li>SEO</li></ul>
+        <a class="more" href="https://gainadmission.com.ng/" target="_blank" rel="noopener">Visit the live site &rarr;</a>
+      </div>
+    </article>
+
+    <article class="case flip">
+      <a class="case-img phone-stage" href="https://gainadmission.com.ng/updates/" target="_blank" rel="noopener">
+        <div class="phone"><img src="img/newsbot.jpg" width="390" height="780" loading="lazy" alt="Updates published by the news bot"></div>
+      </a>
+      <div>
+        <p class="label">Bot &amp; automation</p>
+        <h3>Admission news bot</h3>
+        <p>A bot I run on GainAdmission. Four times a day it visits JAMB and university websites, finds new
+        notices, skips old ones and publishes the important lines with a link to the original. Nobody has to
+        press a button.</p>
+        <ul class="chips"><li>Python</li><li>Scheduled jobs</li><li>APIs</li><li>Auto-publish</li></ul>
+        <a class="more" href="https://gainadmission.com.ng/updates/" target="_blank" rel="noopener">See what it published &rarr;</a>
+      </div>
+    </article>
+
+    <article class="case">
+      <div class="case-img gallery">
+        <img class="wide" src="img/studioos.jpg" width="1280" height="480" loading="lazy" alt="StudioOS: where stories hit hard">
+        <img src="img/last-lamp.jpg" width="640" height="360" loading="lazy" alt="The Last Lamp, an animated story">
+        <img src="img/alley.jpg" width="640" height="360" loading="lazy" alt="Night street background made in StudioOS">
+        <img src="img/sunset.jpg" width="640" height="360" loading="lazy" alt="Sunset background made in StudioOS">
+        <img src="img/city.jpg" width="640" height="360" loading="lazy" alt="City scene from The Last Lamp">
       </div>
       <div>
-        <h3>StudioOS &mdash; my own animation studio</h3>
-        <p class="lede">A complete cartoon and story production studio I wrote in Python. It takes a story from script
-        to a finished, published video &mdash; using free tools that run on an ordinary laptop, with no paid AI
-        subscriptions and no usage limits.</p>
-        <ul class="list">
-          <li><strong>Story to screen:</strong> script, scenes, characters, timeline, render and export in one project.</li>
-          <li><strong>Free offline AI art:</strong> generates illustrations on the laptop's own graphics chip.</li>
-          <li><strong>Voices:</strong> narration and dialogue, with a different voice for each character.</li>
-          <li><strong>Animation:</strong> cut-out character rigs, keyframes with easing, camera moves, zoom and shake.</li>
-          <li><strong>Sound:</strong> voice, music and sound effects mixed automatically.</li>
-          <li><strong>Publishing:</strong> automatic quality check, thumbnails and direct upload to YouTube.</li>
-          <li>Backed by hundreds of automated tests.</li>
-        </ul>
-        <ul class="chips"><li>Python</li><li>FFmpeg</li><li>Local AI image generation</li><li>Animation</li><li>YouTube API</li></ul>
+        <p class="label">Animation studio</p>
+        <h3>StudioOS</h3>
+        <p>My own cartoon studio. It takes a story from script to finished video: scenes, character voices,
+        animation, camera moves, music, quality checks and YouTube upload, using free tools that can run offline.</p>
+        <ul class="chips"><li>Python</li><li>FFmpeg</li><li>Offline AI art</li><li>Animation</li></ul>
       </div>
-    </div>
-  </section>
+    </article>
+  </div>
+</section>
 
-  <section id="services">
-    <h2>What I can build for you</h2>
-    <p class="sub">From a simple business site to a custom tool or an animated story video.</p>
-    <div class="grid">
-      <div class="card"><span class="icon">&#127979;</span><h3>School &amp; tutorial centre websites</h3>
-        <p>Programmes, fees, admission info, results checkers, gallery and WhatsApp contact. Easy for parents to find on Google.</p></div>
-      <div class="card"><span class="icon">&#128717;</span><h3>Business &amp; brand websites</h3>
-        <p>Fast, mobile-first sites for shops, services and personal brands, with products, location and direct WhatsApp orders.</p></div>
-      <div class="card"><span class="icon">&#9881;&#65039;</span><h3>Web apps &amp; dashboards</h3>
-        <p>Custom online systems: booking, records, admin dashboards and members' areas, built around how you work.</p></div>
-      <div class="card"><span class="icon">&#129518;</span><h3>Calculators &amp; online tools</h3>
-        <p>Score calculators, price/quote calculators, eligibility checkers and smart forms that do the maths correctly.</p></div>
-      <div class="card"><span class="icon">&#127916;</span><h3>Animated story videos</h3>
-        <p>Cartoon stories and explainer videos for YouTube channels, schools, churches and brands &mdash; script, art,
-        voices, music and animation, made in my own studio.</p></div>
-      <div class="card"><span class="icon">&#129482;</span><h3>3D &amp; interactive web</h3>
-        <p>Interactive 3D product viewers and animated landing pages that run in any browser, no app needed.</p></div>
-      <div class="card"><span class="icon">&#129302;</span><h3>Automation</h3>
-        <p>Scripts that collect information, check it and update your site or reports automatically &mdash; less manual work every day.</p></div>
-      <div class="card"><span class="icon">&#128202;</span><h3>Data analysis &amp; reports</h3>
-        <p>Clean up spreadsheets, find what the numbers say, and turn them into clear charts and reports.</p></div>
-      <div class="card"><span class="icon">&#128269;</span><h3>Google setup &amp; maintenance</h3>
-        <p>Search Console, sitemap, email on your own domain, speed fixes and ongoing updates so your site keeps working.</p></div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills &amp; tools</h2>
-    <div class="card">
-      <ul class="chips">
-        <li>Python</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Three.js / WebGL</li><li>Automation scripts</li>
-        <li>Data analysis</li><li>Mathematics &amp; statistics</li><li>GitHub &amp; GitHub Actions</li><li>Cloudflare</li>
-        <li>Google Search Console</li><li>SEO &amp; structured data</li><li>Responsive design</li><li>APIs &amp; integrations</li>
+<section class="block dark" id="bots">
+  <div class="wrap bots-in">
+    <div>
+      <p class="kicker">Bots</p>
+      <h2>I create bots</h2>
+      <p class="lead">Tell me what you repeat every day. I'll build a bot to do it.</p>
+      <ul class="bot-list">
+        <li><b>WhatsApp business bots</b><span>Answer common questions, show prices and take orders.</span></li>
+        <li><b>Telegram bots</b><span>Commands, menus, alerts and posts for your channel or group.</span></li>
+        <li><b>Website assistants</b><span>Answer visitors and guide them to the right page.</span></li>
+        <li><b>News &amp; monitoring bots</b><span>Watch websites, spot what's new, then alert you or publish it.</span></li>
+        <li><b>Report &amp; data bots</b><span>Collect data, clean spreadsheets and send the report on time.</span></li>
       </ul>
     </div>
-  </section>
+    <img class="bot-art" src="img/bot.jpg" width="800" height="500" loading="lazy" alt="A business bot replying to a customer">
+  </div>
+</section>
 
-  <section>
-    <h2>Why work with me</h2>
-    <div class="grid">
-      <div class="card"><h3>Proof, not promises</h3><p>You can open my work right now and use it, on your phone.</p></div>
-      <div class="card"><h3>Built for Nigerian users</h3><p>Fast on mobile data, WhatsApp-first contact, prices in naira where needed.</p></div>
-      <div class="card"><h3>Correct numbers</h3><p>A maths and data background means calculators and reports are tested, not guessed.</p></div>
-      <div class="card"><h3>You own it</h3><p>Your domain, your accounts, your code. I show you how to run it.</p></div>
+<section class="block" id="services">
+  <div class="wrap">
+    <p class="kicker">Services</p>
+    <h2>What I can build for you</h2>
+    <div class="services">
+      <article><img src="img/gainadmission.jpg" width="1280" height="640" loading="lazy" alt="">
+        <h3>Websites</h3><p>Schools, tutorial centres, shops and personal brands. Fast on phones and ready for Google.</p></article>
+      <article><img src="img/checker.jpg" width="390" height="780" loading="lazy" alt="">
+        <h3>Web apps &amp; calculators</h3><p>Checkers, quote calculators, booking forms and dashboards built around your work.</p></article>
+      <article><img src="img/bot.jpg" width="800" height="500" loading="lazy" alt="">
+        <h3>Bots</h3><p>WhatsApp, Telegram and website bots that reply, alert, post and take requests.</p></article>
+      <article><img src="img/newsbot.jpg" width="390" height="780" loading="lazy" alt="">
+        <h3>Automation &amp; data</h3><p>Jobs that run on a schedule, collect information and turn it into updates or reports.</p></article>
+      <article><img src="img/last-lamp.jpg" width="640" height="360" loading="lazy" alt="">
+        <h3>Animated videos</h3><p>Stories and explainers for YouTube, schools, churches and brands, with voices and music.</p></article>
+      <article><img src="img/studioos.jpg" width="1280" height="480" loading="lazy" alt="">
+        <h3>Banners &amp; thumbnails</h3><p>Channel banners, video thumbnails and story art that match your brand.</p></article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="process">
-    <h2>How I work</h2>
-    <div class="card">
-      <ol class="steps">
-        <li><strong>Talk:</strong> you tell me your idea, your customers and your budget.</li>
-        <li><strong>Plan:</strong> I send a clear list of what you get, the price and the delivery date &mdash; before any work starts.</li>
-        <li><strong>Build:</strong> you see previews as it grows and ask for changes.</li>
-        <li><strong>Launch:</strong> it goes live on your own domain, tested on phones, and I show you how to use it.</li>
-        <li><strong>Support:</strong> optional monthly care to keep it updated.</li>
-      </ol>
-    </div>
-  </section>
+<section class="block tint" id="process">
+  <div class="wrap">
+    <p class="kicker">Process</p>
+    <h2>From idea to live in four steps</h2>
+    <ol class="steps">
+      <li><h3>Talk</h3><p>Tell me your idea, your customers and your budget.</p></li>
+      <li><h3>Plan</h3><p>You get a clear list, a price and a delivery date before work starts.</p></li>
+      <li><h3>Build</h3><p>You see previews and ask for changes as it grows.</p></li>
+      <li><h3>Launch</h3><p>It goes live, you own it, and I show you how to use it.</p></li>
+    </ol>
+  </div>
+</section>
 
-  <section id="faq">
-    <h2>Questions</h2>
-    <div class="card">
-      <details><summary>How much does a website cost?</summary>
-        <p>It depends on the number of pages and features. Tell me what you need and I'll send a fixed price before I start &mdash; no surprises.</p></details>
-      <details><summary>How long does it take?</summary>
-        <p>A simple business or school site usually takes days, not months. Bigger apps and 3D projects get a clear timeline in the plan.</p></details>
-      <details><summary>Do I need to buy hosting?</summary>
-        <p>Often not. Many sites can run on free or very low-cost hosting. You will usually only need your own domain name.</p></details>
-      <details><summary>Can you update my existing website?</summary>
-        <p>Yes &mdash; I can fix, speed up, redesign or add tools to an existing site.</p></details>
-      <details><summary>Do you work with clients outside Nigeria?</summary>
-        <p>Yes. I work remotely and communicate by email or WhatsApp.</p></details>
-    </div>
-  </section>
+<section class="block" id="faq">
+  <div class="wrap narrow">
+    <p class="kicker">FAQ</p>
+    <h2>Quick answers</h2>
+    <details><summary>How much does it cost?</summary><p>It depends on what you need. I send a fixed price before any work starts.</p></details>
+    <details><summary>How long does it take?</summary><p>A simple site or bot takes days. Bigger apps and videos get a timeline in your plan.</p></details>
+    <details><summary>Do I pay monthly for a bot?</summary><p>Many simple bots run on free hosting. WhatsApp Business and some other services have their own charges, and I show you those before we start.</p></details>
+    <details><summary>Can you improve what I already have?</summary><p>Yes. I can fix, redesign, speed up or add tools and bots to an existing site.</p></details>
+    <details><summary>Do you work with clients outside Nigeria?</summary><p>Yes. I work remotely with clients anywhere.</p></details>
+  </div>
+</section>
 
-  <section id="contact">
-    <div class="cta">
-      <h2>Have an idea? Let's build it.</h2>
-      <p>Send me a short message about your project and I'll reply with a plan and a price.</p>
-      <div class="btns" style="justify-content:center">
-        <a class="btn btn-main" href="mailto:mgbechetafrancismichael@gmail.com?subject=Project%20enquiry">Email me</a>
-      </div>
-      <p style="margin-top:14px;font-size:14px">mgbechetafrancismichael@gmail.com</p>
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Got an idea? Let's build it.</h2>
+    <p>Send a short message. I'll reply with a plan and a price.</p>
+    <div class="actions">
+      <a class="btn" href="mailto:mgbechetafrancismichael@gmail.com?subject=Project%20enquiry">Email me</a>
+      <button class="btn btn-line" id="copy" type="button" data-email="mgbechetafrancismichael@gmail.com">Copy my email</button>
     </div>
-  </section>
+    <p class="email">mgbechetafrancismichael@gmail.com</p>
+  </div>
+</section>
 </main>
 
 <footer>
-  <div class="wrap">&copy; 2026 Francis Mgbecheta &middot; Math, data science, and building ideas.</div>
+  <div class="wrap foot">
+    <p>&copy; 2026 Francis Mgbecheta</p>
+    <p>Math, data science, and building ideas.</p>
+    <a href="#top">Back to top &uarr;</a>
+  </div>
 </footer>
+<script src="site.js"></script>
 </body>
 </html>
